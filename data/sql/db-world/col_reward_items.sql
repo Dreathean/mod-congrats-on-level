@@ -11,11 +11,11 @@ CREATE TABLE IF NOT EXISTS `mod_congrats_on_level_items` (
 
 DELETE FROM `mod_congrats_on_level_items`;
 INSERT INTO `mod_congrats_on_level_items` (`level`, `money`, `spell`, `learn`, `itemId1`, `itemId2`, `race`, `class`) VALUES
-(10, 1, 20217, 0, 3419, 45063, 0, 0),
-(20, 10, 48161, 0, 5433, 38578, 0, 0),
-(30, 15, 48469, 0, 18231, 46780, 0, 0),
-(40, 20, 20217, 0, 31945, 49704, 0, 0),
-(50, 25, 48161, 0, 11382, 32542, 0, 0),
-(60, 30, 48469, 0, 37863, 33219, 0, 0),
-(70, 35, 48161, 0, 9360, 54212, 0, 0),
-(80, 100, 20217, 0, 9361, 40110, 0, 0);
+(10, 1, 20217, 0, 3419, 18587, 0, 0), --red rose, goblin jumper cables xl
+(20, 10, 20217, 0, 49040, 11110, 0, 0), --jeeves, chicken egg pet
+(30, 15, 20217, 0, 18231, 46780, 0, 0),
+(40, 20, 20217, 0, 3427, 49704, 0, 0), -- stylish black shirt, ??
+(50, 25, 20217, 0, 11000, 12382, 0, 0), --shadowforge key, strath key
+(60, 30, 20217, 0, 13704, 12344, 0, 0), --scholo key, seal of ascension
+(70, 35, 20217, 0, 49343, 54212, 0, 0), -- spectral tiger pet, ??
+(80, 100, 20217, 0, 198665, 40110, 0, 0); --pebbles the pet penguin, haunted memento
