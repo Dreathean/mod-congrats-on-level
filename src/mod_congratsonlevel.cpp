@@ -79,7 +79,7 @@ COL col;
 
 uint32 giveAward(Player* player)
 {
-    QueryResult result = WorldDatabase.Query("SELECT * FROM `mod_congrats_on_level_items` WHERE `level`={} AND (`race`={} OR `race`=0) AND (`class`={} OR `class`=0)", player->getLevel(), player->getRace(), player->getClass());
+    QueryResult result = WorldDatabase.Query("SELECT * FROM `mod_congrats_on_level_items` WHERE `level`={} AND (`race`={} OR `race`=0) AND (`class`={} OR `class`=0)", player->GetLevel(), player->getRace(), player->getClass());
 
     uint32 money = 0;
 
@@ -140,7 +140,7 @@ public:
         // If enabled...
         if (col.congratsEnable)
         {
-            uint8 level = player->getLevel();
+            uint8 level = player->GetLevel();
             uint32 money = 0;
 
             switch (level)
@@ -236,13 +236,13 @@ public:
                     case LOCALE_zhTW:
                     case LOCALE_ruRU:
                     {
-                        ss << "|cff4CFF00 " << player->GetName() << " |cffFFFFFFhas reached |cff4CFF00Level " << std::to_string(player->getLevel()) << "|cffFFFFFF!";
+                        ss << "|cff4CFF00 " << player->GetName() << " |cffFFFFFFhas reached |cff4CFF00Level " << std::to_string(player->GetLevel()) << "|cffFFFFFF!";
                         break;
                     }
                     case LOCALE_esES:
                     case LOCALE_esMX:
                     {
-                        ss << "|cff4CFF00 " << player->GetName() << " |cffFFFFFFha alcanzado |cff4CFF00el nivel " << std::to_string(player->getLevel()) << "|cffFFFFFF!";
+                        ss << "|cff4CFF00 " << player->GetName() << " |cffFFFFFFha alcanzado |cff4CFF00el nivel " << std::to_string(player->GetLevel()) << "|cffFFFFFF!";
                     }
                     default:
                         break;
